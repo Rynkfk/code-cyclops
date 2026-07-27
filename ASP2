@@ -12,7 +12,7 @@ void invert4x4(double XtX[][4], double inv[][4]);
 void computeBeta(double inv[][4], double Xty[4], double beta[4]);
 
 int main() {
-    cout << "This program LEARNS the coefficients (c, m1, m2, m3) from historical data using Ordinary Least Squares regression: beta = (X^T X)^-1 X^T y, then uses the learned model to predict future asset return from market" << endl << endl;
+    cout << "Asset_return_predictinator2" << endl;
 
     char answer = 'y';
     while (answer == 'y' || answer == 'Y') {
