@@ -12,7 +12,9 @@ void invert4x4(double XtX[][4], double inv[][4]);
 void computeBeta(double inv[][4], double Xty[4], double beta[4]);
 
 int main() {
-    cout << "This program LEARNS the coefficients (c, m1, m2, m3) from historical data using Ordinary Least Squares regression: beta = (X^T X)^-1 X^T y, then uses the learned model to predict future asset return from market" << endl << endl;
+    cout << "==============================================\n";
+cout << "  LINEAR REGRESSION: ASSET RETURN PREDICTION\n";
+cout << "==============================================\n\n";
 
     char answer = 'y';
     while (answer == 'y' || answer == 'Y') {
@@ -33,7 +35,9 @@ int main() {
         double m2 = beta[2];
         double m3 = beta[3];
 
-        cout << "Now enter new market data to predict asset return:" << endl;  // one last input with pushing weighs c, m1, m2, m3
+        cout << "==============================================\n";
+        cout << "              WEIGHTS OBTAINED\n";
+        cout << "==============================================\n\n";  // one last input with pushing weighs c, m1, m2, m3
 
         double mt1new, mt0new;
         cout << "Enter market index price today: " << endl;
