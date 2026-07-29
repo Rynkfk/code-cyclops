@@ -1,0 +1,1 @@
+Predict asset return
